@@ -8,13 +8,13 @@ int fadeAmount = 1;    // how many points to fade the LED by
 
 // the setup routine runs once when you press reset:
 void setup() {
-  // declare pin 9 to be an output:
+  // declare pin 9 OR builtin led to be an output:
   pinMode(led, OUTPUT);
 }
 
 // the loop routine runs over and over again forever:
 void loop() {
-  // set the brightness of pin 9:
+  // set the brightness of pin 9 OR builtin led:
   analogWrite(led, brightness);
 
   // change the brightness for next time through the loop:
